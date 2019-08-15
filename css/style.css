@@ -72,6 +72,20 @@ body{
     display: none !important;
 }
 
+.text {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 1em 0;
+    background-color: #23d160;
+    color: #fff;
+}
+.card-image:hover > .text {
+    display: inherit;
+    
+}
 @media only screen and (max-width:768px){
     .banner{
         display: none !important;
@@ -121,4 +135,5 @@ body{
     .introduccion{
         margin-left: 70px !important;
     }
+
 }
