@@ -23,6 +23,41 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+  var indice = 0;
+  //Get all panel-navs elements
+  const $panel_navs = Array.prototype.slice.call(document.querySelectorAll('.panel-nav'), 0);
+
+  //Check if have panel-navs
+  if($panel_navs.length > 0){
+
+    //add a click event for each of them
+    $panel_navs.forEach((el) =>{
+      el.addEventListener('click',(e)=>{
+
+        //prevent default usage
+        e.preventDefault()
+
+        //get the target from 'data-target' attribute
+        const target = el.dataset.target;
+        indice = target;
+
+        //get all panel-informacion elements
+        let $others = Array.prototype.slice.call(document.querySelectorAll('.panel-informacion'),0);
+
+        //hide all of them that not match whit the current element
+        $others.forEach(el =>{
+          if(el.itemId != indice){
+            el.classList.add('ocultar');
+          }
+        })
+        //show the element
+        const $target = document.getElementById(target);
+        $target.classList.remove('ocultar');
+        
+      })
+    })
+  
+  }
 
 });
 var index = 0;
@@ -42,3 +77,4 @@ setInterval(function () {
   }
 
 }, 5000);
+

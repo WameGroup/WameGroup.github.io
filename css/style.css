@@ -8,10 +8,7 @@ body{
     float: left; 
     height: 100%;
 }
-img{
-    height: 100%;
-    width: 100%;
-}
+
 .navbar-item {
     background-color:#23d160; 
     color:#ffffff ;
@@ -34,9 +31,6 @@ img{
 .hero  ul  li a:hover {
     background-color:#20bf58; 
     color:white;
-}
-.seccion{
-    min-height: 100vh;
 }
 .card{
     margin: 5px !important;
@@ -76,4 +70,55 @@ img{
 }
 .ocultar{
     display: none !important;
+}
+
+@media only screen and (max-width:768px){
+    .banner{
+        display: none !important;
+    }
+    .introduccion{
+        margin-top: 52px !important;
+        margin-left: 30px !important;
+        margin-bottom: 10px !important;
+        color: #23d160 !important;
+    }
+    .seccion{
+ 
+        margin-bottom: 0px;
+        
+    }
+    .burger{
+        margin-right: 15px;
+    }
+    #home{
+        background-image: url('../assets/bg1.jpg') !important;
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+        margin-bottom: 0px !important;
+        height: 400px !important;
+        
+    }
+    .title{
+        color: #23d160 !important;
+    }
+    .subtitle{
+        color:#fff;
+    }
+    #services{
+        margin-top:0px;
+    }
+}
+
+@media only screen and (min-width:769px){
+    img{
+        height: 625px;
+        width: 100%;
+    }
+    .seccion{
+        min-height: 100vh;
+    }
+    .introduccion{
+        margin-left: 70px !important;
+    }
 }
