@@ -67,6 +67,7 @@ body{
     width:150px;
     border-color: #23d160;
     border-style: solid;
+    background-color: #fff !important;
 }
 .ocultar{
     display: none !important;
@@ -94,12 +95,6 @@ body{
     .banner{
         display: none !important;
     }
-    .introduccion{
-        margin-top: 52px !important;
-        margin-left: 30px !important;
-        margin-bottom: 10px !important;
-        color: #23d160 !important;
-    }
     .seccion{
  
         margin-bottom: 0px;
@@ -108,14 +103,33 @@ body{
     .burger{
         margin-right: 15px;
     }
+    .titulo{
+        margin-top: 100px;
+        font-size: 50px;
+    }
+    .subtitulo{
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
     #home{
-        background-image: url('../assets/bg1.jpg') !important;
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
         margin-bottom: 0px !important;
-        height: 400px !important;
+        height: 580px !important;
         
+    }
+    #about {
+        background-image: linear-gradient(
+            rgba(0,0,0,.8),
+            rgba(0,0,0,.8)
+        ),
+        url('../assets/panel2.jpg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
     }
     #mensaje1{
         display: none;
@@ -133,12 +147,42 @@ body{
         margin-top: 100px !important;
     }
     #home{
-        background-image: url('../assets/bg1.jpg') !important;
+        background-image: linear-gradient(
+            rgba(0,0,0,.8),
+            rgba(0,0,0,.8)
+        ),
+        url('../assets/bg1.jpg');
         background-position: center; /* Center the image */
         background-repeat: no-repeat; /* Do not repeat the image */
         background-size: cover; /* Resize the background image to cover the entire container */
         margin-bottom: 0px !important;
-        padding-top: 52px;
+       
+    }
+    
+    #about {
+        background-image: linear-gradient(
+            rgba(0,0,0,.8),
+            rgba(0,0,0,.8)
+        ),
+        url('../assets/panel2.jpg');
+        background-position: center; /* Center the image */
+        background-repeat: no-repeat; /* Do not repeat the image */
+        background-size: cover; /* Resize the background image to cover the entire container */
+    }
+    #somos{
+        margin-top: 10%;
+        
+    }
+    .titulo{
+        font-size: 100px;
+    }
+    .subtitulo{
+        font-size: 30px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    #intro{
+        margin-top: 100px;
     }
     img{
         height: 625px;
@@ -149,9 +193,6 @@ body{
     }
     .seccion{
         min-height: 100vh;
-    }
-    .introduccion{
-        margin-left: 70px !important;
     }
 
 }

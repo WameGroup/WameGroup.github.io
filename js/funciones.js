@@ -87,3 +87,16 @@ function toParams(data_js) {
 
   return form_data.join("&");
 }
+var images = ['bg1.jpg','fast.jpg','web-design.jpg'];
+var index = 1;
+setInterval(()=>{
+  document.getElementById('home').style.backgroundImage = `linear-gradient(
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.8)
+  ),url('./assets/${images[index]}')`;
+  if(index==2){
+    index = 0;
+  }else{
+    index++;
+  }
+}, 7000);
