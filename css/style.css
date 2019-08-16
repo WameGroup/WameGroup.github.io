@@ -117,7 +117,12 @@ body{
         height: 400px !important;
         
     }
-    
+    #mensaje1{
+        display: none;
+    }
+    #mensaje2{
+        display: inherit;
+    }
     #services{
         margin-top:0px;
     }
@@ -127,6 +132,9 @@ body{
     img{
         height: 625px;
         width: 100%;
+    }
+    #mensaje2{
+        display:none;
     }
     .seccion{
         min-height: 100vh;
