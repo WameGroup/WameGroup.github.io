@@ -72,30 +72,13 @@ document.addEventListener('DOMContentLoaded', () => {
     request.open("POST", "https://postmail.invotes.com/send", true);
     request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
     request.send(params);
-    alert('Mensaje enviado')
+    alert('Mensaje enviado. Gracias por elegirnos para realizar tus ideas realidad!!')
     document.getElementById('nombre').value = '';
     document.getElementById('subject').value = '';
     document.getElementById('message').value = '';
   });
 
 });
-var index = 0;
-setInterval(function () {
-  if (index == 0) {
-    let panel = document.getElementById('primer-panel');
-    panel.classList.add('ocultar');
-    let panel1 = document.getElementById('segundo-panel');
-    panel1.classList.remove('ocultar');
-    index = 1;
-  } else if (index == 1) {
-    let panel = document.getElementById('primer-panel');
-    panel.classList.remove('ocultar');
-    let panel1 = document.getElementById('segundo-panel');
-    panel1.classList.add('ocultar');
-    index = 0;
-  }
-
-}, 5000);
 function toParams(data_js) {
   var form_data = [];
   for ( var key in data_js ) {

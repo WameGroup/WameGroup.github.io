@@ -86,6 +86,10 @@ body{
     display: inherit;
     
 }
+.baja{
+    bottom:0;
+    vertical-align: bottom;
+}
 @media only screen and (max-width:768px){
     .banner{
         display: none !important;

@@ -4,7 +4,6 @@ let sencillas = new ScrollReveal();
             origin:'bottom',
             delay:100,
             interval:16,
-            reset:true,
             distance:'200px',
             mobile:true
         });
@@ -12,7 +11,6 @@ let sencillas = new ScrollReveal();
             origin: 'left',
             delay: 100,
             interval: 16,
-            reset: true, 
             distance: '1000px',
             mobile:false        
         });
@@ -21,7 +19,6 @@ let sencillas = new ScrollReveal();
             delay: 100,
             interval: 16,
             duration: 1000,
-            reset: true, 
             distance: '200px',
             mobile:false        
         });
@@ -29,21 +26,18 @@ let sencillas = new ScrollReveal();
             origin:'right',
             delay:100,
             interval:16,
-            reset:true,
             distance:'1000px',
             mobile:false        });
         sencillas.reveal('.bot',{
             origin:'top',
             delay:100,
             interval:16,
-            reset:true,
             distance:'200px',
             mobile:false        });
         sencillas.reveal('.left-rotate',{
             origin: 'left',
             delay: 100,
             interval: 16,
-            reset: true,
             duration: 1000, 
             distance: '1000px',
             rotate:{
@@ -55,8 +49,7 @@ let sencillas = new ScrollReveal();
             origin: 'bottom',
             delay: 100,
             interval: 16,
-            duration: 1000,
-            reset: true, 
+            duration: 1000, 
             distance: '200px',
             rotate:{
                 z:180
@@ -67,7 +60,6 @@ let sencillas = new ScrollReveal();
             origin:'right',
             delay:100,
             interval:16,
-            reset:true,
             distance:'1000px',
             duration:1000,
             rotate:{
@@ -79,7 +71,6 @@ let sencillas = new ScrollReveal();
             origin:'top',
             delay:100,
             interval:16,
-            reset:true,
             distance:'200px',
             duration:1000,
             rotate:{
