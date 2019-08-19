@@ -63,7 +63,7 @@ document.addEventListener('DOMContentLoaded', () => {
     send.addEventListener('click', function (e) {
 
         e.preventDefault();
-        let message = document.getElementById('message').value;
+        let message = document.getElementById('message').value + " " + document.getElementById('correo').value;
         let sub = document.getElementById('nombre').value + " " + document.getElementById('subject').value;
         let params = toParams({ subject: sub, text: message, access_token: 'l032gfkqnb8rvr1j4ib3cpvs' });
         var request = new XMLHttpRequest();
