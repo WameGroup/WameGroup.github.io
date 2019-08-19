@@ -8,6 +8,7 @@
     <link rel="shortcut icon" href="./assets/logo-wame-green.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.5/css/bulma.min.css">
     <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/css/bulma-carousel.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/animate.css">
     <script src="https://kit.fontawesome.com/7c8c8a2dc9.js"></script>
@@ -20,9 +21,9 @@
         <div class="container">
             <div class="navbar-brand">
                 <a class="navbar-item" href="#">
-                    <h1 class="title has-text-white">Wame</h1>
+                    <img src="./assets/logo-wame-white.png" width="50">
                 </a>
-                <a  role="button" class="navbar-burger burger is-size-3" aria-label="menu" aria-expanded="true"
+                <a role="button" class="navbar-burger burger is-size-3" aria-label="menu" aria-expanded="true"
                     data-target="navbarBasicExample">
                     <span aria-hidden="true"></span>
                     <span aria-hidden="true"></span>
@@ -46,7 +47,7 @@
             <div class="column ">
                 <div class="columns introduccion is-vcentered is-centered" id="intro">
                     <div class="column has-text-centered animated fadeIn">
-                        
+
                         <h2 class="title titulo has-text-white">
                             Welcome to Wame
                         </h2>
@@ -58,14 +59,15 @@
                             easiest and most successful.
                         </p>
                         <br><br><br>
-                        <p class="subtitle has-text-white" id="mensaje2" >The best way to grow your business is to have a digital presence.</p>
+                        <p class="subtitle has-text-white" id="mensaje2">The best way to grow your business is to have a
+                            digital presence.</p>
                         <a href="#contact" class="button is-success is-rounded is-size-3">Get Started</a>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-    <section id="services" class="section seccion" >
+    <section id="services" class="section seccion">
         <div class="container">
             <div class="columns">
                 <div class="column is-12 has-text-centered  has-text-success">
@@ -110,7 +112,7 @@
         </div>
     </section>
     <section class="section seccion" id="projects">
-        <div class="container" >
+        <div class="container">
             <div class="columns ">
                 <div class="column is-12 has-text-centered">
                     <h4 class="is-size-5 has-text-success">ACCOMPLISHMENTS</h4>
@@ -124,8 +126,8 @@
             <div class="columns">
                 <div class="column">
                     <div class="container">
-                        <div class="columns">
-                            <div class="column is-4 card is-paddingless left">
+                        <div class="carousel" id="carousel-demo">
+                            <div class=" item-1 card is-paddingless">
                                 <div class="card-image">
                                     <figure class="image is-5by3">
                                         <img src="./assets/aftimcalc.png" alt="Placeholder image">
@@ -137,7 +139,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column card is-4 is-paddingless bot">
+                            <div class=" item-2 card  is-paddingless">
                                 <div class="card-image ">
                                     <figure class="image is-5by3">
                                         <img src="./assets/sistema.jpg" alt="Placeholder image">
@@ -149,7 +151,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="column card is-4 is-paddingless right">
+                            <div class=" item-3 card  is-paddingless">
                                 <div class="card-image ">
                                     <figure class="image is-5by3">
                                         <img src="./assets/rest.png" alt="Placeholder image">
@@ -158,6 +160,30 @@
                                         <h3><a class="has-text-white" href="https://github.com/Duccem"
                                                 target="_blank">Resposteria</a></h3>
                                         <span>Restaurant interactive menu</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" item-4 card  is-paddingless">
+                                <div class="card-image ">
+                                    <figure class="image is-5by3">
+                                        <img src="./assets/chat.png" alt="Placeholder image">
+                                    </figure>
+                                    <div class="text animated fadeIn has-text-centered">
+                                        <h3><a class="has-text-white" href="https://github.com/Duccem"
+                                                target="_blank">Chat Interno</a></h3>
+                                        <span>Chat integrated</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class=" item-5 card  is-paddingless">
+                                <div class="card-image ">
+                                    <figure class="image is-5by3">
+                                        <img src="./assets/articulos.png" alt="Placeholder image">
+                                    </figure>
+                                    <div class="text animated fadeIn has-text-centered">
+                                        <h3><a class="has-text-white" href="https://github.com/Duccem"
+                                                target="_blank">Blog</a></h3>
+                                        <span>A blog of articles</span>
                                     </div>
                                 </div>
                             </div>
@@ -176,7 +202,7 @@
                     <p class="has-text-white">
                         A group composed of students and computer professionals,
                         willing to give everything for excellence and to give life
-                       to the ideas of those people who dream of sharing something
+                        to the ideas of those people who dream of sharing something
                         with the world or that their business grows more every day.
                         Committed to satisfy in the best way all the needs you may
                         have and take your idea or business to the next level on the
@@ -343,31 +369,52 @@
                     <br>
                 </div>
             </div>
-            <div class="columns">
-                <div class=" column field">
-                    <label class="label">Nombre</label>
-                    <div class="control has-icons-left">
-                        <input class="input is-success" type="text" id="nombre" name="nombre" placeholder="Your Name">
-                        <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+            <div class="columns is-centered ">
+                <div class="column card contacto is-7">
+                    <div class="columns">
+                        <div class=" column field">
+                            <label class="label">Nombre</label>
+                            <div class="control has-icons-left">
+                                <input class="input is-success" type="text" id="nombre" name="nombre"
+                                    placeholder="Your Name">
+                                <span class="icon is-small is-left"><i class="fas fa-user"></i></span>
+                            </div>
+                        </div>
+                        <div class=" column field">
+                            <label class="label">Correo</label>
+                            <div class="control has-icons-left">
+                                <input class="input is-success" type="text" id="correo" name="correo"
+                                    placeholder="Your Mail">
+                                <span class="icon is-small is-left"><i class="fas fa-mail"></i></span>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class=" column field">
-                    <label class="label">Subject</label>
-                    <div class="control has-icons-left">
-                        <input class="input is-success" type="text" id="subject" name="nombre" placeholder="Subject">
-                        <span class="icon is-small is-left"><i class="fas fa-at"></i></span>
+                    <div class="columns">
+                        <div class=" column field">
+                            <label class="label">Subject</label>
+                            <div class="control has-icons-left">
+                                <input class="input is-success" type="text" id="subject" name="nombre"
+                                    placeholder="Subject">
+                                <span class="icon is-small is-left"><i class="fas fa-at"></i></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns">
+                        <div class=" column field">
+                            <label class="label">Message</label>
+                            <div class="control">
+                                <textarea class="textarea is-success" id="message" name="message" cols="30"
+                                    rows="5"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="columns is-centered">
+                        <a class="column is-12 button is-success is-rounded is-size-5" id="send">Send Message</a>
                     </div>
                 </div>
             </div>
-            <div class="columns">
-                <div class=" column field">
-                    <label class="label">Message</label>
-                    <div class="control">
-                        <textarea class="textarea is-success" id="message" name="message" cols="30" rows="5"></textarea>
-                    </div>
-                </div>
-            </div>
-            <a class="button is-success is-rounded is-size-5" id="send">Send Message</a>
+
+
         </div>
     </section>
     <footer class="footer verde has-text-white">
@@ -377,10 +424,10 @@
                     <h4>About us</h4>
                     <br>
                     <p>
-                            A group composed of students and computer professionals,
-                            willing to give everything for excellence and to give life
-                            to the ideas of those people who dream of sharing something
-                            with the world or that their business grows more every day.
+                        A group composed of students and computer professionals,
+                        willing to give everything for excellence and to give life
+                        to the ideas of those people who dream of sharing something
+                        with the world or that their business grows more every day.
                     </p>
                 </div>
                 <div class="column">
@@ -439,6 +486,9 @@
     </footer>
 
     <script src="./js/animaciones.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bulma-extensions@6.2.7/dist/js/bulma-extensions.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bulma-carousel@4.0.4/dist/js/bulma-carousel.min.js"></script>
     <script src="./js/funciones.js"></script>
 </body>
 

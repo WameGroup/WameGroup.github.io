@@ -99,3 +99,9 @@ setInterval(() => {
         index++;
     }
 }, 7000);
+bulmaCarousel.attach('#carousel-demo', {
+    slidesToScroll: 1,
+    slidesToShow: 3,
+    loop : true,
+    infinite: true
+})

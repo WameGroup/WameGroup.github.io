@@ -8,7 +8,9 @@ body{
     float: left; 
     height: 100%;
 }
-
+.navbar-item > img{
+    max-height: 100% !important;
+}
 .navbar-item {
     background-color:#23d160; 
     color:#ffffff ;
@@ -18,8 +20,13 @@ body{
     color:#ffffff !important;
 }
 .navbar-item:active {
-    background-color:#20bf58 !important; 
+    background-color:#23d160 !important; 
     color:#ffffff !important;
+}
+.contacto{
+    padding: 5%;
+    border-radius: 5%;
+    box-shadow: 5px 5px 40px #999999;
 }
 .hero ul li {
     padding: 10px 0px;
@@ -72,7 +79,26 @@ body{
 .ocultar{
     display: none !important;
 }
-
+.card-image{
+    overflow: hidden;
+}
+.card-image  img {
+    transition: transform .5s ease !important;
+}
+.card-image:hover  img {
+    transform: scale(1.2) !important;
+}
+.slider-page{
+    background: #23d160 !important;
+}
+.slider-navigation-next{
+    background: #23d160 !important;
+    color:#fff !important;
+}
+.slider-navigation-previous{
+    background: #23d160 !important;
+    color:#fff !important;
+}
 .text {
     display: none;
     position: absolute;
@@ -87,6 +113,7 @@ body{
     display: inherit;
     
 }
+
 .baja{
     bottom:0;
     vertical-align: bottom;
@@ -188,10 +215,6 @@ body{
     }
     #intro{
         margin-top: 100px;
-    }
-    img{
-        height: 625px;
-        width: 100%;
     }
     #mensaje2{
         display:none;
